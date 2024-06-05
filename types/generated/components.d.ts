@@ -5,9 +5,11 @@ export interface SharedMedia extends Schema.Component {
   info: {
     displayName: 'Media';
     icon: 'file-video';
+    description: '';
   };
   attributes: {
     file: Attribute.Media;
+    altText: Attribute.String;
   };
 }
 
@@ -16,10 +18,11 @@ export interface SharedQuote extends Schema.Component {
   info: {
     displayName: 'Quote';
     icon: 'indent';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
-    body: Attribute.Text;
+    body: Attribute.RichText;
   };
 }
 

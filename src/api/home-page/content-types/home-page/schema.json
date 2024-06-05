@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroText": {
+      "type": "text"
+    },
+    "faqsList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.quote"
+    },
+    "featuredSection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.media"
+    }
+  }
+}
